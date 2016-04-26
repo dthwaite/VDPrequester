@@ -1,0 +1,37 @@
+{
+  "opts": {
+    "encoding": "utf8",
+    "destination": "../github.io/docs/",
+    "recurse": true
+  },
+  "plugins": [ "plugins/markdown"],
+
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": true
+  },
+  "source": {
+    "include": [
+      "lib/vdprequester.js",
+      "package.json"
+    ]
+  },
+  "templates": {
+    "logoFile": "",
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "dateFormat": "ddd MMM Do YYYY",
+    "outputSourceFiles": true,
+    "outputSourcePath": true,
+    "systemName": "VDPrequester",
+    "footer": "",
+    "copyright": "Copyright (c) 2016 Dominic Thwaites <dominicthwaites@mac.com>",
+    "navType": "vertical",
+    "theme": "cosmo",
+    "linenums": true,
+    "collapseSymbols": false,
+    "inverseNav": true,
+    "protocol": "html://",
+    "methodHeadingReturns": false
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "VDPrequester",
+  "version": "1.0.0",
+  "description": "Volunteer Distributed Processing Job Requester",
+  "homepage": "http://dthwaite.github.io/VDPrequester",
+  "tonicExampleFilename": "tonicexample.js",
+  "keywords": [
+    "distributed processing",
+    "volunteer network",
+    "processing jobs"
+  ],
+  "author": "Dominic Thwaites <dominicthwaites@mac.com> (http://www.domt.name)",
+  "main": "./lib/vdprequester.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dthwaite/VDPrequester.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dthwaite/VDPrequester/issues",
+    "email": "dominicthwaites@mac.com"
+  },
+  "scripts": {
+    "test": "browserify ./lib/vdprequester.js  --standalone VDPrequester -o ./test/vdprequester.js && open test/index.html",
+    "view-coverage": "open coverage/lcov-report/index.html",
+    "lint": "eslint lib/vdprequester.js",
+    "build-prod": "./scripts/build.sh",
+    "test-coverage": "browserify -t browserify-istanbul ./lib/vdprequester.js  --standalone VDPrequester -o ./test/vdprequester.js -d && ./scripts/phantomjs-test.js && istanbul report --root coverage lcov",
+    "build-docs": "jsdoc -c jsdoc.json -t ./node_modules/ink-docstrap/template -R README.md"
+  },
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "browserify": "^13.0.0",
+    "browserify-istanbul": "^2.0.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.2.0",
+    "ink-docstrap": "^1.1.4",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.3.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "mocha-phantomjs": "^4.0.2",
+    "sinon": "1.17.3",
+    "uglify-js": "^2.6.2"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 2.2.x"
+  }
+}

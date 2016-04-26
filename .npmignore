@@ -1,0 +1,12 @@
+.eslintrc
+.gitignore
+.npmignore
+.bithoundrc
+jsdoc.json
+*.min.js
+.idea
+.travis.yml
+coverage
+/lib/uglify
+/scripts
+/test
