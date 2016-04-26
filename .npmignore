@@ -10,3 +10,4 @@ coverage
 /lib/uglify
 /scripts
 /test
+/test/vdprequester.js

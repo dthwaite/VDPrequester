@@ -8,7 +8,7 @@
 [![bitHound Overall Score](https://www.bithound.io/github/dthwaite/VDPrequester/badges/score.svg)](https://www.bithound.io/github/dthwaite/VDPrequester)
 [![bitHound Code](https://www.bithound.io/github/dthwaite/VDPrequester/badges/code.svg)](https://www.bithound.io/github/dthwaite/VDPrequester)
 
-##### VDPrequester.js requests jobs to be run in the cloud on volunteer computers
+##### Requests jobs to be run in the cloud on volunteer computers
 
 Available on [GitHub](https://github.com/dthwaite/VDPrequester), details on [JSDocs](http://dthwaite.github.io/docs/VDPrequester/1.0.0).
 
@@ -20,29 +20,31 @@ To install it:
 `npm install VDPrequester`
 
 To see how to use it:
-`npm docs VDPrequester`
+`npm docs`
 
 To code with it:
 ```javascript
-var VDPrequester=new VDPrequester("ws://127.0.0.1:8080");
+var vdprequester=new VDPrequester('ws://127.0.0.1:8080');
 
-VDPrequester.send(n,'squareroot',function(error,result) {
-    "The square root of "+n+" is "+result.data;
+var square=21;
+vdprequester.send(square,'squareroot',function(error,result) {
+    'The square root of '+square+' is '+result.data;
 });
 ```
 ##### Browser:
 To install it:
 
-* Download [vdprequester.min.js](https://github.com/dthwaite/VDPrequester/tree/master/lib/VDPrequester.min.js) from GitHub or use their CDN for my latest version: [v1.0.0](https://cdn.rawgit.com/dthwaite/VDPrequester/v1.0.0/lib/VDPrequester.min.js)
+* Download [vdprequester.min.js](https://github.com/dthwaite/VDPrequester/tree/master/lib/VDPrequester.min.js) from GitHub or use their CDN for my latest version: [v1.0.0](https://cdn.rawgit.com/dthwaite/VDPrequester/v1.0.0/lib/vdprequester.min.js)
 * `vdprequester.min.js` is a UMD (Universal Module Definition) bundle with an export name of `VDPrequester`
 
 To code with it:
 ```javascript
 <script>
-var vdprequester=new VDPrequester("ws://127.0.0.1:8080");
+var vdprequester=new VDPrequester('ws://127.0.0.1:8080');
 
-vdprequester.send(n,'squareroot',function(error,result) {
-    "The square root of "+n+" is "+result.data;
+var square=21;
+vdprequester.send(square,'squareroot',function(error,result) {
+    'The square root of '+square+' is '+result.data;
 });
 </script>
 ```

@@ -10,6 +10,7 @@
         "**/thirdparty/**",
         "**/third_party/**",
         "**/**.min.**",
-        "test/vdprequester.js"
+        "test/vdprequester.js",
+        "tonicexample.js"
       ]
 }
