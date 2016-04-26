@@ -1,5 +1,6 @@
-var vdplink=new VDPlink("ws://127.0.0.1:8080");
+var vdprequester=new VDPrequester('ws://127.0.0.1:8080'); //eslint-disable-line
 
-vdplink.send(n,'squareroot',function(error,result) {
-    "The square root of "+n+" is "+result.data;
+var square=21;
+vdprequester.send(square,'squareroot',function(error,result) {
+    'The square root of '+square+' is '+result.data;
 });

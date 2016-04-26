@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 module.exports = {
     afterEnd: function(runner) {
         var fs = require('fs');

@@ -22,7 +22,7 @@
   "scripts": {
     "test": "browserify ./lib/vdprequester.js  --standalone VDPrequester -o ./test/vdprequester.js && open test/index.html",
     "view-coverage": "open coverage/lcov-report/index.html",
-    "lint": "eslint lib/vdprequester.js",
+    "lint": "eslint lib/vdprequester.js tonicexample.js test/phantom_hooks.js test/test.js scripts/phantomjs-test.js",
     "build-prod": "./scripts/build.sh",
     "test-coverage": "browserify -t browserify-istanbul ./lib/vdprequester.js  --standalone VDPrequester -o ./test/vdprequester.js -d && ./scripts/phantomjs-test.js && istanbul report --root coverage lcov",
     "build-docs": "jsdoc -c jsdoc.json -t ./node_modules/ink-docstrap/template -R README.md"
