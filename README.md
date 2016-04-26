@@ -1,6 +1,6 @@
 ## VDPrequester
 
-[![Join the chat at https://gitter.im/dthwaite/VDP](https://badges.gitter.im/dthwaite/VDP.svg)](https://gitter.im/dthwaite/VDP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/dthwaite/VDPrequester](https://badges.gitter.im/dthwaite/VDP.svg)](https://gitter.im/dthwaite/VDPrequester?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/VDPrequester)
 [![Build Status](https://secure.travis-ci.org/dthwaite/TPA.png)](http://travis-ci.org/dthwaite/VDPrequester)

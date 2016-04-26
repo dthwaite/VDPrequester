@@ -10,7 +10,6 @@
         "**/thirdparty/**",
         "**/third_party/**",
         "**/**.min.**",
-        "/lib/uglify/**",
-        "/test/vdprequester.js"
+        "test/vdprequester.js"
       ]
 }
